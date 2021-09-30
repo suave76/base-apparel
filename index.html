@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- styles link -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="flex">
+      <div class="content">
+        <!--LOGO-->
+        <img class="logo" src="images/logo.svg" alt="base_apparel_logo" />
+
+        <!--MOBILE HERO IMG-->
+        <img
+          class="hero_mobile"
+          src="images/hero-mobile.jpg"
+          alt="model_pose.jpg"
+        />
+
+        <!--TEXT SECTION -->
+        <h1><span>We're</span><br />coming<br />soon</h1>
+        <p>
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form onsubmit="validate(); return false;">
+          <input
+            name="email_id"
+            id="email_id"
+            placeholder="Email Address"
+            autocomplete="off"
+          />
+          <img
+            class="error_img"
+            src="images/icon-error.svg"
+            alt="error_sign.jpg"
+          />
+          <!-- BUTTON SECTION-->
+          <button type="submit">
+            <img src="images/icon-arrow.svg" alt="" />
+          </button>
+        </form>
+
+        <!--error msg-->
+        <p class="error_msg">Please provide a valid email</p>
+      </div>
+
+      <img
+        class="hero_desktop"
+        src="images/hero-desktop.jpg"
+        alt="model_pose.jpg"
+      />
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Suave</a>.
+      </p>
+    </footer>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
