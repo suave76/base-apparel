@@ -1,4 +1,4 @@
-document.querySelector("input").addEventListener("click",function(){
+document.addEventListener("click",function(){
     document.querySelector(".error_msg").classList.remove("error_msg_show");
     document.querySelector(".error_img").classList.remove("error_img_show");
     document.querySelector("form").classList.remove("form_error");
